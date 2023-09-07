@@ -24,4 +24,4 @@ The red color signifies anomaly - either the node is down or the number of cores
 
 
 
-[^footnote]: systen that manages and schedules the jobs on the cluster.
+[^footnote]: system that manages and schedules the jobs on the cluster.
