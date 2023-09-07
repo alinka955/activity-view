@@ -24,9 +24,7 @@ The red color signifies anomaly - either the node is down or the number of cores
 ## Functionality
 While the map is open, one can press q ro quit it, h to see a help message, and any other key to refresh the map.
 
-Due to the shell function included as a separate file in the repository, it is possible to run this program from a command line. 
-
-sp
+Due to the shell function included as a separate file in the repository, it is possible to run this program from a command line by typing ```activity-view```.
 
 That way it becomes accessible to all the users in the network.
 
