@@ -21,7 +21,8 @@ If the node is colored in yellow, that means that either node's memory or CPUs a
 
 The red color signifies anomaly - either the node is down or the number of cores used is more than 52. In the snapshot of the map above, nodes 'spdr16' and 'spdr51' are highlighted in red and respectively display 88 and 92 cores as used. This happened because users underestimated the resources that their job needed. That is why, although the numbers in columns 'Allocated' are within appripriate limits, the numbers in columns 'Used' overflow. 
  
-
+## Functionality
+While the map is open, one can press q ro quit it, h to see a help message, and any other key to refresh the map.
 
 
 [^footnote]: system that manages and schedules the jobs on the cluster.
