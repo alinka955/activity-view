@@ -14,7 +14,7 @@ University of Richmond cluster has 30 nodes, called 'spdr..'. Each node has 52 c
 Next to the name of the node, you can see the map. It tells you how many cores (CPUs), out of 52, SLURM has allocated, based on the requests from users. Columns 'Allocated' reflect the amount of cores and memory requested by the usrs.
 It happens that users either underestimate or overestimate the cores or memory than their program actually needs to execute. The amount of resources requested by users is reflected in the columns 'Used'. 
 
-## What do color mean?
+## What do colors mean?
 If the node is colored in green, that means that its load is less than 75% in terms of both memory and CPU usage. 
 
 If the node is colored in yellow, that means that either node's memory or CPUs are more than 75% occupied.
