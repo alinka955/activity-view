@@ -11,7 +11,7 @@ At the University of Richmond (UR), students and faculty conduct comprehensive r
 ## What does this map mean?
 University of Richmond cluster has 30 nodes, called 'spdr..'. Each node has 52 cores and some memory capacity, ranging from 384 to 1536 GB. 
 
-Next to the name of the node, you can see the map. It tells you how many cores (CPUs), out of 52, SLURM has allocated, based on the requests from users. Columns 'Allocated' reflect the amount of cores and memory requested by the usrs.
+Next to the name of the node, you can see the map. It tells you how many cores (CPUs), out of 52, SLURM has allocated, based on the requests from users. Columns 'Allocated' reflect the amount of cores and memory requested by the users.
 It happens that users either underestimate or overestimate the cores or memory than their program actually needs to execute. The amount of resources requested by users is reflected in the columns 'Used'. 
 
 ## What do colors mean?
@@ -19,10 +19,10 @@ If the node is colored in green, that means that its load is less than 75% in te
 
 If the node is colored in yellow, that means that either node's memory or CPUs are more than 75% occupied.
 
-The red color signifies anomaly - either the node is down or the number of cores used is more than 52. In the snapshot of the map above, nodes 'spdr16' and 'spdr51' are highlighted in red and respectively display 88 and 92 cores as used. This happened because users underestimated the resources that their job needed. That is why, although the numbers in columns 'Allocated' are within appripriate limits, the numbers in columns 'Used' overflow. 
+The red color signifies anomaly - either the node is down or the number of cores used is more than 52. In the snapshot of the map above, nodes 'spdr16' and 'spdr51' are highlighted in red and respectively display 88 and 92 cores as used. This happened because users underestimated the resources that their job needed. That is why, although the numbers in columns 'Allocated' are within appropriate limits, the numbers in columns 'Used' overflow. 
  
 ## Functionality
-While the map is open, one can press q ro quit it, h to see a help message, and any other key to refresh the map.
+While the map is open, one can press q to quit it, h to see a help message, and any other key to refresh the map.
 
 Due to the shell function included as a separate file in the repository, it is possible to run this program from a command line by typing ```activity-view```.
 
