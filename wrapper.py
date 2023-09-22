@@ -16,7 +16,6 @@ if sys.version_info < min_py:
 ##
 # Standard imports
 ##
-import bdb
 import contextlib
 import datetime
 from   functools import wraps
