@@ -6,7 +6,9 @@ Initially, this program was created to help students and faculty at the Universi
 ![Screenshot 2023-09-03 at 14 15 26](https://github.com/alinka955/activity-view/assets/78833495/ac054306-85c7-4c87-a343-21fa169cf1eb)
 
 ## What is this for?
-At the University of Richmond (UR), students and faculty conduct comprehensive research that requires heavy calculations. Since regular PCs have limited resources, users take advantage of the UR cluster and have their calculations done in seconds, rather than hours or days. Once a user submits their job, SLURM [^footnote] takes care of its allocation and execution. While there is an opportunity to rely on SLURM's scheduling, users prefer to choose the nodes they want to run a job on independently. The map clearly displays the nodes with the most available resources. 
+At the University of Richmond (UR), students and faculty conduct comprehensive research that requires heavy calculations. Since regular PCs have limited resources, users take advantage of the UR cluster and have their calculations done in seconds, rather than hours or days. Once a user submits their job, SLURM [^footnote] takes care of its allocation and execution. While there is an opportunity to rely on SLURM's scheduling, users prefer to choose the nodes they want to run a job on independently. The real-time activity of the cluster is represented my a map. It clearly displays the nodes with the most available resources and allows users pick the one where their job will run the fastest.. 
+
+On the other side, there is a system administrator of the cluster. Being in charge of the whole system, they like to keep everything on track. It is handy to look at the map and note any anomalies on the cluster and address them accordingly and in a timely manner.
 
 ## What does this map mean?
 University of Richmond cluster has 30 nodes, called 'spdr..'. Each node has 52 cores and some memory capacity, ranging from 384 to 1536 GB. 
@@ -19,14 +21,12 @@ If the node is colored in green, that means that its load is less than 75% in te
 
 If the node is colored in yellow, that means that either node's memory or CPUs are more than 75% occupied.
 
-The red color signifies anomaly - either the node is down or the number of cores used is more than 52. In the snapshot of the map above, nodes 'spdr16' and 'spdr51' are highlighted in red and respectively display 88 and 92 cores as used. This happened because users underestimated the resources that their job needed. That is why, although the numbers in columns 'Allocated' are within appripriate limits, the numbers in columns 'Used' overflow. 
+The red color signifies anomaly - either the node is down or the number of cores requested is more than 52. In the snapshot of the map above, nodes 'spdr16' and 'spdr51' are highlighted in red and respectively display 88 and 92 cores as used. This happened because users underestimated the resources that their job needed. That is why, although the numbers in columns 'Allocated' are within appripriate limits, the numbers in columns 'Used' overflow. 
  
 ## Functionality
-While the map is open, one can press q ro quit it, h to see a help message, and any other key to refresh the map.
+While the map is open, one can press q to quit it, h to see a help message, and any other key to refresh the map.
 
 Due to the shell function included as a separate file in the repository, it is possible to run this program from a command line by typing ```activity-view```.
-
-That way it becomes accessible to all the users in the network.
 
 
 [^footnote]: system that manages and schedules the jobs on the cluster.
