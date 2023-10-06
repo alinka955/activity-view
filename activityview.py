@@ -26,6 +26,7 @@ import getpass
 import fcntl
 import logging
 import re
+import shutil
 import time
 import math
 mynetid = getpass.getuser()
