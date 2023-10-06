@@ -461,6 +461,15 @@ if __name__ == '__main__':
 
     verbose = myargs.verbose if logging.NOTSET <= myargs.verbose <= logging.CRITICAL else logging.DEBUG
     logger = view_utils.URLogger(level=myargs.verbose)
+    
+    ###
+    # Make an effort to ensure SLURM is on this system.
+    ###
+    slurm_installed = bool(shutil.which('sinfo'))
+
+    if not slurm_installed:
+        print("This does not appear to be a SLURM system.")
+        sys.exit(os.EX_SOFTWARE)
 
 
     try:
