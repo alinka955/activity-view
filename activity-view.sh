@@ -4,7 +4,7 @@ function activity-view
     oldlib="$LD_LIBRARY_PATH"
     export PYTHONPATH=
     export LD_LIBRARY_PATH=
-    python3.8 ./activityview.py
+    python3 ./activityview.py
     export PYTHONPATH="$old"
     export LD_LIBRARY_PATH="$oldlib"
 }
